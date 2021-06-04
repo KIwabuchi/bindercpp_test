@@ -1,4 +1,4 @@
 cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
-cd /tmp && wget https://dl.bintray.com/boostorg/release/1.75.0/source/boost_1_75_0.tar.gz && tar xvf boost_1_75_0.tar.gz
+cd /tmp && wget -q --no-check-certificate https://dl.bintray.com/boostorg/release/1.75.0/source/boost_1_75_0.tar.gz && tar xvf boost_1_75_0.tar.gz
 cd /tmp && export BOOST_ROOT=$PWD/boost_1_75_0
 cd /tmp/metall && mkdir build && cd build && cmake .. -DBOOST_ROOT=${BOOST_ROOT} && make -j
