@@ -1,3 +1,3 @@
 build-essential
 cmake
-gcc
+gcc-9
