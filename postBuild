@@ -1,8 +1,9 @@
 jupyter --paths
 jupyter kernelspec list
-ls /srv/conda/envs/notebook/share/jupyter/kernels/xcpp17
+ls /srv/conda/envs/notebook/share/jupyter/kernels/xcpp17/
 cat /srv/conda/envs/notebook/share/jupyter/kernels/xcpp17/kernel.json
-ls /srv/conda/envs/notebook/bin/xcpp
+ls /srv/conda/envs/notebook/bin/xcpp/
+cat /srv/conda/envs/notebook/bin/xcpp
 cat /srv/conda/envs/notebook/bin/xcpp/kernel.json
 sleep 30
 alias g++="g++-8 -pthread"
