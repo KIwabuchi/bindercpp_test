@@ -1,3 +1,4 @@
+lsb_release -a
 dpkg --get-selections | grep gcc
 gcc --version
 #cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
