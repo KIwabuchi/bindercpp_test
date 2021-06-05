@@ -2,9 +2,7 @@ jupyter --paths
 jupyter kernelspec list
 ls /srv/conda/envs/notebook/share/jupyter/kernels/xcpp17/
 cat /srv/conda/envs/notebook/share/jupyter/kernels/xcpp17/kernel.json
-ls /srv/conda/envs/notebook/bin/xcpp/
-cat /srv/conda/envs/notebook/bin/xcpp
-cat /srv/conda/envs/notebook/bin/xcpp/kernel.json
+ls -ls /srv/conda/envs/notebook/bin/xcpp
 sleep 30
 alias g++="g++-8 -pthread"
 cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
