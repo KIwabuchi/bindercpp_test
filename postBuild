@@ -5,9 +5,7 @@ jupyter --paths
 echo "========================================="
 echo "========================================="
 echo "========================================="
-ls -ls /usr/local/share/jupyter
-ls -ls /usr/share/jupyter
-ls -ls /home/jovyan/.local/share/jupyter
+ls -ls /home/jovyan/.jupyter
 cp -r ./xcpp17 /usr/local/share/jupyter/kernels
 sleep 30
 cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
