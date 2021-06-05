@@ -1,13 +1,5 @@
-echo "========================================="
-echo "========================================="
-echo "========================================="
 jupyter --paths
-echo "========================================="
-echo "========================================="
-echo "========================================="
-ls -ls /home/jovyan/.jupyter
-cp -r ./xcpp17 /usr/local/share/jupyter/kernels
-sleep 30
+alias g++="g++-8 -pthread"
 cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
 cd /tmp && wget -q --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.72.0/source/boost_1_72_0.tar.gz && tar xf boost_1_72_0.tar.gz
 cd /tmp/metall/tutorial/ics21
