@@ -1,3 +1,4 @@
+dpkg --get-selections | grep gcc
 cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
 cd /tmp && wget -q --no-check-certificate https://dl.bintray.com/boostorg/release/1.75.0/source/boost_1_75_0.tar.gz && tar xvf boost_1_75_0.tar.gz
 cd /tmp && export BOOST_ROOT=$PWD/boost_1_75_0
