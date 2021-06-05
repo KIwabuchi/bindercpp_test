@@ -1,4 +1,4 @@
 cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
-cd /tmp && wget --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz && tar xvf boost_1_75_0.tar.gz
+cd /tmp && wget -q --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz && tar xvf boost_1_75_0.tar.gz
 ls -ls /tmp
 cd /tmp/metall && mkdir build && cd build && cmake .. -DBOOST_ROOT=/tmp/boost_1_75_0 -DCMAKE_C_COMPILER=gcc-8 -DCMAKE_CXX_COMPILER=g++-8 && make -j
