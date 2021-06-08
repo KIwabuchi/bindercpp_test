@@ -1,7 +1,7 @@
 {
   "display_name": "C++17",
   "argv": [
-      "g++-8",
+      "/srv/conda/envs/notebook/bin/xcpp",
       "-f",
       "{connection_file}",
       "-std=c++17",
