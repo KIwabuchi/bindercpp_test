@@ -2,3 +2,6 @@ build-essential
 cmake
 gcc-8
 g++-8
+vi
+vim
+emacs
