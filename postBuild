@@ -6,8 +6,13 @@ cp ./xcpp17/kernel.json /srv/conda/envs/notebook/share/jupyter/kernels/xcpp17/ke
 export CC=gcc-8
 export CXX=g++-8
 
-cd /tmp && git clone --recursive https://github.com/LLNL/metall.git
-cd /tmp && wget -q --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.72.0/source/boost_1_72_0.tar.gz && tar xf boost_1_72_0.tar.gz
+git clone --recursive https://github.com/LLNL/metall.git
+cd metall
+git checkout develop
+
+wget -q --no-check-certificate https://boostorg.jfrog.io/artifactory/main/release/1.72.0/source/boost_1_72_0.tar.gz
+tar xf boost_1_72_0.tar.gz
+mv boost_1_72_0 boost
 
 #cd /tmp/metall/tutorial/ics21
 #g++-8 -std=c++17 t1-1.cpp -lstdc++fs -I../../include -I/tmp/boost_1_72_0/ -pthread
